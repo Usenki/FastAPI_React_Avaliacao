@@ -1,0 +1,135 @@
+.quiz-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  background-color: #fff8f5;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #222222;
+}
+
+.quiz-question {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #0a1f44;
+  user-select: none;
+}
+
+.quiz-title {
+  width: 100%;
+  display: block;
+  margin-top: 0;
+  background-color: #0a1f44;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.quiz-meaning {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+.quiz-options {
+  display: grid;
+
+  gap: 1.25rem;
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+
+.quiz-option-button {
+  background-color: #fff;
+  border: 2.5px solid #e31837;
+  border-radius: 14px;
+  padding: 1.1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #e31837;
+  box-shadow: 0 6px 10px rgba(227, 24, 55, 0.25);
+  transition: all 0.3s ease;
+  text-align: center;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-option-button:hover,
+.quiz-option-button:focus {
+  background-color: #e31837;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(227, 24, 55, 0.5);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+.quiz-feedback {
+  font-weight: 700;
+  font-size: 1.25rem;
+  min-height: 2rem;
+  margin-bottom: 2rem;
+  color: #0a1f44;
+  text-align: center;
+  user-select: none;
+}
+
+.quiz-feedback.correct {
+  color: #2e7d32; 
+}
+
+.quiz-feedback.incorrect {
+  color: #c62828;  
+}
+
+.quiz-restart-button {
+  background-color: #0a1f44;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  user-select: none;
+}
+
+.quiz-restart-button:hover,
+.quiz-restart-button:focus {
+  background-color: #173b82;
+  outline: none;
+}
+
+.quiz-japanese-text {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-family: 'Sawarabi Mincho', serif;
+  font-size: 2.8rem;
+  writing-mode: vertical-rl;
+  letter-spacing: 0.15em;
+  color: #e31837;
+  user-select: none;
+  pointer-events: none;
+  z-index: 10;
+}
